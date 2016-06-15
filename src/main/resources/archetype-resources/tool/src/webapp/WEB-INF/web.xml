@@ -27,8 +27,8 @@
 	<!-- Deploy mode -->
 	<context-param>
             <param-name>configuration</param-name>
-            <param-value>development</param-value>
-            <!--  <param-value>deployment</param-value> -->
+		<!--  <param-value>development</param-value> -->
+        	<param-value>deployment</param-value>
 	</context-param>
 
 
@@ -53,7 +53,7 @@
 	
 	<!-- Sakai Spring Listener -->
 	<listener>
-		<listener-class>org.sakaiproject.util.ContextLoaderListener</listener-class>
+		<listener-class>org.sakaiproject.util.SakaiContextLoaderListener</listener-class>
 	</listener>
 	
 	
